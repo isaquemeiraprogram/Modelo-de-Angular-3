@@ -1,0 +1,70 @@
+.container{
+    background-color: rgb(60, 60, 60);
+    width: 1000px;
+    height: 500px;
+    padding: 50px;
+}
+
+h1{
+    /* altera tamanho de todas fontes */
+    font-size: xx-large;
+    color: white;
+}
+
+/* pra chamar classe use ponto, tambem conhecido como seletor de classe */
+.podutos{
+    /* pra soltar os cards no display e de quebra deixar um do lado do outro */
+ display: flex;
+}
+
+/* como todos os cards tem a mesma config eu posso dar a mesma classe pra cada card e configurar aqui  */
+.card{
+    /* config pro card: */
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    /* pra um card nao colar no outro */
+    margin: 10px;
+
+    /* config pros itens dentro do card */
+    /* pro conteudo ficar dentro do card ou nao colar nas bordas do card espacamento interno*/
+    padding: 10px;
+
+    /* pra soltar itens no card / sem ele nao da pra usar justify content nem aling itens*/
+    display: flex;
+
+    /* poem itens dentro do card um em baixo do outro */
+    flex-direction: column;
+
+    /* poem img no centro */
+    /* no modo coluna ele centraliza na vertical,sem modo columa centraliza na Horizontal */
+    justify-content: center;
+    /* no modo coluna ele centraliza na Horizontal,sem modo columa centraliza na vertical */
+    align-items: center;
+
+    /* poem texto no centro */
+    text-align: center;
+
+    /* poem borda arredondada */
+    border-radius: 5%;
+
+    /* poem porda de 5 pixel e poem cor vermelha solid e pra dizer q a borda e cor solida e nao transparente*/
+    border: 5px solid red;
+
+    /* sombra 1° 2 px = sombra horizontal, 2° 5px borda vertical,3° o quanto a sombra fica borrada,4° Aumenta ou diminui o tamanho da sombra.,5° cor*/
+    box-shadow: 2px 5px 10px 2px black;
+}
+
+/* como todas img vai ter tamanho padrao se chama direto pela tag sem ponto */
+img{
+    height: 140px;
+
+}
+
+.nome{
+    color: rgb(188, 75, 198);
+}
+
+.preco{
+    color: rgb(58, 189, 111);
+}

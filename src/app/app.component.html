@@ -1,0 +1,42 @@
+<div class="container">
+
+  <!-- nesse modelo comecamos a usar o model que facilita a forma como preenchemos os dados no type script
+   e reduz o numero de atributos criados
+   obs... para criar model click em app cria uma pasta chamada model e crie um arquivo.ts
+   obs... sempre nomeie com o nome_da_classe.model.ts
+   obs...so foram feitas alteracoes no type script e no html
+   -->
+  <h1>Produtos a venda</h1>
+  <div class="podutos">
+
+    <!-- aqui vai a cola
+        pra chamar
+        para eventos que chamam funçao ()
+        parametro/propriedade da tag []
+        atributo {{}} 
+    -->
+
+
+    <div class="card">
+      <!-- chamando parametro -->
+      <img [src]="produto1.img" alt="">
+
+      <!--  chamando atributo -->
+      <p class="nome"> {{produto1.nome}}</p>
+      <p class="preco"> {{produto1.preco}}</p>
+    </div>
+
+    <div class="card">
+      <img [src]="produto2.img" alt="">
+      <p class="nome"> {{produto2.nome}}</p>
+      <p class="preco">{{produto2.preco}}</p>
+    </div>
+
+    <div class="card">
+      <img [src]="produto2.img" alt="">
+      <p class="nome"> {{produto2.nome}}</p>
+      <p class="preco">{{produto2.preco}}</p>
+    </div>
+
+  </div>
+</div>
